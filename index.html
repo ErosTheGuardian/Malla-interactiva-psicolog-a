@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malla Interactiva Psicología</title>
-  <link rel="stylesheet" href="estilos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Curricular Psicología</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-<script>
-  console.log("El script se está ejecutando correctamente.");
-  const mallaDiv = document.getElementById("malla");
-  if (mallaDiv) {
-    mallaDiv.textContent = "El script funciona y puede acceder al div #malla.";
-  } else {
-    console.log("No se encontró el div #malla.");
-  }
-</script>
 <body>
-  <h1>Malla Curricular Interactiva</h1>
+    <header>
+        <h1>Malla Curricular Psicología</h1>
+        <p>Haz clic en los cursos para marcarlos como aprobados y desbloquear los siguientes</p>
+    </header>
+    
+    <div class="container">
+        <div class="contador">
+            Cursos aprobados: <span id="contador-aprobados">0</span> de 56
+        </div>
+        
+        <div id="malla-container">
+            <!-- La malla se generará con JavaScript -->
+        </div>
+        
+        <button class="reiniciar" id="reiniciar-btn">Reiniciar Malla</button>
+    </div>
 
-  <!-- Contenedor donde se genera toda la malla -->
-  <div id="malla"></div>
-
-  <!-- Lógica de la interacción -->
-  <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -6,6 +6,15 @@
   <title>Malla Interactiva Psicología</title>
   <link rel="stylesheet" href="estilos.css" />
 </head>
+<script>
+  console.log("El script se está ejecutando correctamente.");
+  const mallaDiv = document.getElementById("malla");
+  if (mallaDiv) {
+    mallaDiv.textContent = "El script funciona y puede acceder al div #malla.";
+  } else {
+    console.log("No se encontró el div #malla.");
+  }
+</script>
 <body>
   <h1>Malla Curricular Interactiva</h1>
 

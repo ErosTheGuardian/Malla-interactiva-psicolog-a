@@ -1,1 +1,52 @@
+body {
+  font-family: sans-serif;
+  background-color: #f8f4ff;
+  color: #2a003f;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #5f2a84;
+}
+
+.semestre {
+  border: 1px solid #ddd;
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #f3e9fc;
+  border-radius: 8px;
+}
+
+button.curso {
+  display: block;
+  margin: 8px 0;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: left;
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+button.bloqueado {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+button.disponible {
+  background-color: #b089f9;
+  color: white;
+  font-weight: bold;
+}
+
+button.aprobado {
+  background-color: #5f2a84;
+  color: white;
+  font-weight: bold;
+  text-decoration: line-through;
+}
 

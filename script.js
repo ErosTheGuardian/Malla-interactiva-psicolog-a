@@ -1,4 +1,3 @@
-// Datos completos de los cursos
 const cursos = [
     // Semestre 1
     { id: "PSIC_A002", nombre: "Procesos Cognitivos", codigo: "PSIC A002", semestre: 1, desbloquea: ["PSIC_C001", "PSIC_C002"] },
